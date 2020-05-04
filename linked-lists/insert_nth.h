@@ -21,7 +21,7 @@ void InsertNth(int elem, int pos){
 
     for(i=1;i<pos-1;i++){
       if(trav==NULL){
-        printf("\n Invalid position!\nTryAgain:)\n\n");
+        printf("\nInvalid position!\nTryAgain:)\n\n");
         return;
       }
       trav = trav->next;

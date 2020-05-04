@@ -9,5 +9,4 @@ struct Node{
 
 // Our only reference to the linked list is this head
 // which is the pointer to the whole linked list.
-struct Node* head;
-head=NULL;
+struct Node* head=NULL;

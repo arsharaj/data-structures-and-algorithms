@@ -23,6 +23,7 @@ Operations Implemented:
 #include"node.h"
 #include"insert_begin.h"
 #include"insert_nth.h"
+#include"delete_at.h"
 #include"print_list.h"
 
 #endif

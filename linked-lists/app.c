@@ -8,7 +8,8 @@ void main(){
     do{
         printf("1. Print all the elements in the linked list.\n");
         printf("2. Insert element at the beginning of the linked list\n");
-        printf("3. Insert the element at the nth position\n");
+        printf("3. Insert element at nth position\n");
+        printf("4. Delete element at nth position\n");
         printf("0. Exit \n\n");
         printf("Enter your choice : ");
         scanf("%d",&choice);
@@ -27,6 +28,11 @@ void main(){
                     printf("Enter a valid position in the list : ");
                     scanf("%d",&pos);
                     InsertNth(elem, pos);
+                    PrintList();
+                    break;
+            case 4: printf("Enter the position at which you want to delete the element : ");
+                    scanf("%d",&pos);
+                    DeleteAt(pos);
                     PrintList();
                     break;
             default: printf("Invalid choice!\nTry Again\n");
