@@ -24,6 +24,7 @@ Operations Implemented:
 #include"insert_begin.h"
 #include"insert_nth.h"
 #include"delete_at.h"
+#include"reverse.h"
 #include"print_list.h"
 
 #endif
