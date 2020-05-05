@@ -13,6 +13,7 @@ void main()
 		printf("3. Insert element at nth position\n");
 		printf("4. Delete element at nth position\n");
 		printf("5. Reverse the list\n");
+		printf("6. Print all the elements in a list in recursive way\n");
 		printf("0. Exit \n\n");
 		printf("Enter your choice : ");
 		scanf("%d", &choice);
@@ -48,6 +49,11 @@ void main()
 			ReverseList();
 			printf("Reversed ");
 			PrintList();
+			break;
+		case 6:
+			printf("List : ");
+			PrintRecursive(head);
+			printf("\n");
 			break;
 		default:
 			printf("Invalid choice!\nTry Again\n");
