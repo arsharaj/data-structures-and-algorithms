@@ -15,6 +15,7 @@ void main()
 		printf("5. Reverse the list\n");
 		printf("6. Print all the elements in a list in recursive way\n");
 		printf("7. Print reverse list in a recursive way\n");
+		printf("8. Reverse the whole list in recursive manner\n");
 		printf("0. Exit \n\n");
 		printf("Enter your choice : ");
 		scanf("%d", &choice);
@@ -60,6 +61,10 @@ void main()
 			printf("Reverse List : ");
 			PrintRecursiveReverse(head);
 			printf("\n\n");
+			break;
+		case 8:
+			ReverseRecursive(head);
+			PrintList();
 			break;
 		default:
 			printf("Invalid choice!\nTry Again\n");
