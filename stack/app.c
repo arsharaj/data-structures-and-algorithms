@@ -10,6 +10,7 @@ void main(){
   do{
     printf("1. Push the element onto the stack\n");
     printf("2. Removes element from the stack\n");
+    printf("3. Print element on the top of the stack\n");
     printf("0. Exit\n\n");
 
     printf("Enter your choice : ");
@@ -28,6 +29,12 @@ void main(){
       case 2:
         PopStackArray();
         PrintStackArray();
+
+        break;
+      case 3:
+        printf("Top of Stack : ");
+        printf("%d ",TopStackArray());
+        printf("\n\n");
 
         break;
       default: printf("\nInvalid choice!\nEnter a valid choice?\n\n");
