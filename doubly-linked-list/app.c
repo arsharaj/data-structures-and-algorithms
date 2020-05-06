@@ -10,6 +10,7 @@ void main(){
   do{
     printf("1. Print all the elements in the list\n");
     printf("2. Insert the element in the front of the linked list\n");
+    printf("3. Insert element at the end of list\n");
     printf("0. Exit\n");
 
     printf("\nEnter your choice : ");
@@ -24,6 +25,12 @@ void main(){
         printf("Enter the element you want to insert : ");
         scanf("%d",&elem);
         InsertFront(elem);
+        PrintList();
+        break;
+      case 3:
+        printf("Enter the element : ");
+        scanf("%d",&elem);
+        InsertEnd(elem);
         PrintList();
         break;
       default:
