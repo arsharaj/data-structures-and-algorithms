@@ -13,6 +13,7 @@ void main(){
     printf("3. Insert element at the end of list\n");
     printf("4. Remove element from front of the list\n");
     printf("5. Remove element from end of the list\n");
+    printf("6. Print all the elements in the reverse direction\n");
     printf("0. Exit\n");
 
     printf("\nEnter your choice : ");
@@ -42,6 +43,9 @@ void main(){
       case 5:
         PrintList();
         RemoveEnd();
+        break;
+      case 6:
+        ReversePrint();
         break;
       default:
         printf("\nInvalid choice!\nTry Again?\n");

@@ -27,5 +27,6 @@ Operations:
 #include"remove_front.h"
 #include"remove_end.h"
 #include"print_list.h"
+#include"reverse_print.h"
 
 #endif
