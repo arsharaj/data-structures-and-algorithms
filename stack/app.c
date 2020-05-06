@@ -9,6 +9,7 @@ void main(){
 
   do{
     printf("1. Push the element onto the stack\n");
+    printf("2. Removes element from the stack\n");
     printf("0. Exit\n\n");
 
     printf("Enter your choice : ");
@@ -21,6 +22,11 @@ void main(){
         scanf("%d",&elem);
 
         PushStackArray(elem);
+        PrintStackArray();
+
+        break;
+      case 2:
+        PopStackArray();
         PrintStackArray();
 
         break;
