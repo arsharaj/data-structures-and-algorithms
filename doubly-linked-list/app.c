@@ -11,6 +11,8 @@ void main(){
     printf("1. Print all the elements in the list\n");
     printf("2. Insert the element in the front of the linked list\n");
     printf("3. Insert element at the end of list\n");
+    printf("4. Remove element from front of the list\n");
+    printf("5. Remove element from end of the list\n");
     printf("0. Exit\n");
 
     printf("\nEnter your choice : ");
@@ -32,6 +34,14 @@ void main(){
         scanf("%d",&elem);
         InsertEnd(elem);
         PrintList();
+        break;
+      case 4:
+        RemoveFront();
+        PrintList();
+        break;
+      case 5:
+        PrintList();
+        RemoveEnd();
         break;
       default:
         printf("\nInvalid choice!\nTry Again?\n");

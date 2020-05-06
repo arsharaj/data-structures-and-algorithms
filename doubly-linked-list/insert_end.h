@@ -5,12 +5,14 @@
 // Changes reflect back to the original list.
 void InsertEnd(int elem){
   struct Node* temp=GetNode();
+  struct Node* trav=head;
 
   temp->data=elem;
-  temp->prev=NULL;
-  temp->next=NULL;
 
-  struct Node* trav=head;
+  if(head==NULL){
+    head=temp;
+    return;
+  }
 
   while(trav->next!=NULL){
     trav=trav->next;
@@ -18,4 +20,5 @@ void InsertEnd(int elem){
 
   trav->next=temp;
   temp->prev=trav;
+
 }

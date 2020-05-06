@@ -24,6 +24,8 @@ Operations:
 #include"get_node.h"
 #include"insert_node.h"
 #include"insert_end.h"
+#include"remove_front.h"
+#include"remove_end.h"
 #include"print_list.h"
 
 #endif
