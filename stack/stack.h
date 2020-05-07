@@ -15,7 +15,8 @@ Operations :-
 #define _STACK_H
 
 // Including all the required header files.
-#include"stdio.h"
+#include<stdio.h>
+#include<stdlib.h>
 
 // Custom files
 #include"array.h"
@@ -23,5 +24,14 @@ Operations :-
 #include"pop_stack_array.h"
 #include"top_stack_array.h"
 #include"print_stack_array.h"
+#include"node.h"
+#include"push_stack_list.h"
+#include"pop_stack_list.h"
+#include"print_stack_list.h"
+#include"top_stack_list.h"
+
+// Main driver programs
+#include"stack_array.h"
+#include"stack_list.h"
 
 #endif
