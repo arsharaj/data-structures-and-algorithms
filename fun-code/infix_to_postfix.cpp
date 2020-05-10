@@ -27,7 +27,7 @@ int IsClosingBracket(char mychar){
 // Check weather the given character is a number or not
 // Return true if it is a number else return false.
 int IsNumber(char mychar){
-  if((int)mychar-'0'>=0 || (int)mychar-'0'<=9){
+  if((int)mychar-'0'>=0 && (int)mychar-'0'<=9){
     return true;
   }
   return false;
@@ -43,7 +43,15 @@ int IsOperator(char mychar){
 }
 
 // Operator Precedence Check
+// If precedence of first operator is greater than other then return true 
+// else return false.
+bool CheckPrecedence(char a, char b){
+  if((a=='*'||a=='/')&&(b=='+'||b=='-')){
+    return true;
+  }
 
+  return false;
+}
 
 string ConvertPostfix(string infix){
   int i;
@@ -57,14 +65,41 @@ string ConvertPostfix(string infix){
     if(IsOpeningBracket(mychar)){
       char_stack.push(mychar);
     }else if(IsClosingBracket(mychar)){
-      // TODO
+      while(!IsOpeningBracket(char_stack.top())){
+        postfix+=char_stack.top();
+        char_stack.pop();
+        if(char_stack.empty()) break;
+      }
+      if(!char_stack.empty()){
+        char_stack.pop();
+      }
     }else if(IsNumber(mychar)){
       postfix+=mychar;
     }else if(IsOperator(mychar)){
-      //TODO
+      if(char_stack.empty()||IsOpeningBracket(char_stack.top())){
+        char_stack.push(mychar);
+        continue;
+      }
+
+      if(CheckPrecedence(mychar,char_stack.top())){
+        char_stack.push(mychar);
+      }else{
+        while(!IsOpeningBracket(char_stack.top())){
+          postfix+=char_stack.top();
+          cout<<postfix<<endl;
+          char_stack.pop();
+          if(char_stack.empty()) break;
+        }
+        char_stack.push(mychar);
+      }
     }else{
       return "Invalid Symbols in expressions!!";
     }
+  }
+
+  while(!char_stack.empty()){
+    postfix+=char_stack.top();
+    char_stack.pop();
   }
 
   return postfix;
