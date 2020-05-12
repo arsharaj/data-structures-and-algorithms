@@ -11,6 +11,7 @@ void main(){
     printf("1. Enqueue element on the queue\n");
     printf("2. Dequeue element from the queue\n");
     printf("3. Check weather the queue is empty or not\n");
+    printf("4. Front element of the queue\n");
     printf("5. Print current queue\n");
     printf("0. Exit\n");
 
@@ -34,6 +35,10 @@ void main(){
         break;
       case 3:
         IsEmpty();
+
+        break;
+      case 4:
+        printf("The front element of the queue is : %d\n\n",frontQueue());
 
         break;
       case 5: 

@@ -31,6 +31,7 @@ Some operations that are available in queue are:
 #include"enqueue_array.h"
 #include"dequeue_array.h"
 #include"isempty_array.h"
+#include"front_queue_array.h"
 #include"print_queue_array.h"
 
 #endif
