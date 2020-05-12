@@ -10,6 +10,7 @@ void main(){
   do{
     printf("1. Enqueue element on the queue\n");
     printf("2. Dequeue element from the queue\n");
+    printf("3. Check weather the queue is empty or not\n");
     printf("5. Print current queue\n");
     printf("0. Exit\n");
 
@@ -29,6 +30,10 @@ void main(){
       case 2:
         printf("Deleted elem : %d\n",Dequeue());
         PrintQueue();
+
+        break;
+      case 3:
+        IsEmpty();
 
         break;
       case 5: 
