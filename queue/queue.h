@@ -13,9 +13,9 @@ There are two popular implementation of queues:
 1. Array-based Implementation
 2. List-based Implementation
 
-Operations that are available in queue are:
+Some operations that are available in queue are:
 1. Enqueue(elem) - Insert the element in the queue
-2. Dequeue() - Remove element from the front end
+2. Dequeue() - Remove element from the front of the queue
 3. IsEmpty() - Boolean value of the queue empty status
 4. Front() - Return front element in the queue.
 */
@@ -29,6 +29,7 @@ Operations that are available in queue are:
 // Include all the custom libraries
 #include"queue_array.h"
 #include"enqueue_array.h"
+#include"dequeue_array.h"
 #include"print_queue_array.h"
 
 #endif
