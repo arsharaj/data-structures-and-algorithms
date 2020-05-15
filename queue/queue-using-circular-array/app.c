@@ -23,6 +23,10 @@ void main(){
         Enqueue(elem);
         PrintQueue();
         break;
+      case 2:
+        Dequeue();
+        PrintQueue();
+        break;
       default: printf("\nInvalid choice!! Try Again..\n\n");
     }
   }while(choice!=0);

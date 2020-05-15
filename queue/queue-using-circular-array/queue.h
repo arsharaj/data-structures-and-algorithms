@@ -28,6 +28,7 @@ int front=-1,rear=-1;
 
 // Custom Libraries
 #include"enqueue.h"
+#include"dequeue.h"
 #include"print_queue.h"
 
 #endif

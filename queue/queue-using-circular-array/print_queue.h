@@ -6,12 +6,13 @@
 void PrintQueue(){
   int i=front,j=rear;
 
+  printf("Queue : ");
+
   if(i==-1&&j==-1){
-    printf("Queue is empty\n\n");
+    printf("\n\n");
     return;
   }
 
-  printf("Queue : ");
   while(i!=j){
     printf("%d ",queue[i]);
     i=(i+1)%MAX_SIZE;
