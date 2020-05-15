@@ -27,6 +27,13 @@ void main(){
         Dequeue();
         PrintQueue();
         break;
+      case 3:
+        if(IsEmpty()==1){
+          printf("Queue is empty!!\n\n");
+        }else{
+          printf("Queue is not empty!!\n\n");
+        }
+        break;
       default: printf("\nInvalid choice!! Try Again..\n\n");
     }
   }while(choice!=0);
