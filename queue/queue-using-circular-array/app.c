@@ -34,6 +34,9 @@ void main(){
           printf("Queue is not empty!!\n\n");
         }
         break;
+      case 4:
+        printf("The front element in the queue is : %d\n\n",frontQueue());
+        break;
       default: printf("\nInvalid choice!! Try Again..\n\n");
     }
   }while(choice!=0);

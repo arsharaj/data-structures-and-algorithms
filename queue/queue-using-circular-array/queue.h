@@ -30,6 +30,7 @@ int front=-1,rear=-1;
 #include"enqueue.h"
 #include"dequeue.h"
 #include"isempty.h"
+#include"front.h"
 #include"print_queue.h"
 
 #endif
