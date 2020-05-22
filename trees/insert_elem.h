@@ -6,7 +6,7 @@ struct BstNode* InsertNode(struct BstNode* root,int data){
     if(root==NULL){
         struct BstNode* newNode = GetNode(data);
         root=newNode;
-    }else if(root->data <= data){
+    }else if(data <= root->data){
         root->left = InsertNode(root->left,data);
     }else{
         root->right = InsertNode(root->right,data);

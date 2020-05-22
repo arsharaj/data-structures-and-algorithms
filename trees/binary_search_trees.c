@@ -1,6 +1,30 @@
 // Include all the required files
 #include"binary_search_trees.h"
 
+// Find the minimum element in the binary search tree.
+// Return -1 if the tree is empty.
+int FindMin(struct BstNode* root){
+    if(root==NULL){
+        return -1;
+    }
+    while(root->left!=NULL){
+        root=root->left;
+    }
+    return root->data;
+}
+
+// Find the maximum element in the binary search tree.
+// Return -1 if the tree is empty.
+int FindMax(struct BstNode* root){
+    if(root==NULL){
+        return -1;
+    }
+    while(root->right!=NULL){
+        root=root->right;
+    }
+    return root->data;
+}
+
 // Main function - Starting point of the program
 int main(){
     int choice,elem;
@@ -9,6 +33,8 @@ int main(){
     do{
         printf("1. Insert a value in the binary search tree\n");
         printf("2. Search for a value in our binary search tree\n");
+        printf("3. Find minimum element in the binary search tree\n");
+        printf("4. Find maximum element in the binary search tree\n");
         printf("0. Exit\n");
         printf("Enter your choice : ");
         scanf("%d",&choice);
@@ -23,6 +49,14 @@ int main(){
                 printf("Enter element to search : ");
                 scanf("%d",&elem);
                 SearchNode(rootptr,elem) ? printf("Found..\n") : printf("Not Found..\n");
+                break;
+            case 3:
+                elem = FindMin(rootptr);
+                printf("Minimum element : %d\n", elem);
+                break;
+            case 4:
+                elem = FindMax(rootptr);
+                printf("Maximum element : %d\n", elem);
                 break;
             default: printf("Enter a valid choice!!\n");
         }
