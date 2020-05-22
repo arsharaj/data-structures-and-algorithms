@@ -32,5 +32,8 @@ struct BstNode* rootptr=NULL;
 #include"get_node.h"
 #include"insert_elem.h"
 #include"search_elem.h"
+#include"find_min.h"
+#include"find_max.h"
+#include"find.height.h"
 
 #endif

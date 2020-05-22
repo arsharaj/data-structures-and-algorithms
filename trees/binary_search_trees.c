@@ -11,6 +11,7 @@ int main(){
         printf("2. Search for a value in our binary search tree\n");
         printf("3. Find minimum element in the binary search tree\n");
         printf("4. Find maximum element in the binary search tree\n");
+        printf("5. Find the height of the binary search tree\n");
         printf("0. Exit\n");
         printf("Enter your choice : ");
         scanf("%d",&choice);
@@ -33,6 +34,9 @@ int main(){
             case 4:
                 elem = FindMax(rootptr);
                 printf("Maximum element : %d\n", elem);
+                break;
+            case 5:
+                printf("Height of the tree : %d\n",FindHeight(rootptr));
                 break;
             default: printf("Enter a valid choice!!\n");
         }
