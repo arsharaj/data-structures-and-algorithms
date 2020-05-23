@@ -35,5 +35,6 @@ struct BstNode* rootptr=NULL;
 #include"find_min.h"
 #include"find_max.h"
 #include"find.height.h"
+#include"delete_node.h"
 
 #endif

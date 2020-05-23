@@ -13,6 +13,7 @@ int main(){
         cout << "4. Inorder traversal of the tree\n";
         cout << "5. Postorder traversal of the tree\n";
         cout << "6. Check that the given tree is binary search tree or not\n";
+        cout << "7. Delete the node from the binary search tree\n";
         cout << "0. Exit\n";
         cout << "Enter your choice : ";
         cin >> choice;
@@ -47,6 +48,11 @@ int main(){
                 }else{
                     cout << "No, tree is not a binary search tree\n";
                 }
+                break;
+            case 7:
+                printf("Enter the data of the node you want to delete : ");
+                scanf("%d",&elem);
+                rootptr = DeleteNode(rootptr,elem);
                 break;
             default: cout << "Enter a valid choice!!\n";
         }

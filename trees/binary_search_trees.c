@@ -12,6 +12,7 @@ int main(){
         printf("3. Find minimum element in the binary search tree\n");
         printf("4. Find maximum element in the binary search tree\n");
         printf("5. Find the height of the binary search tree\n");
+        printf("6. Delete a particular node \n");
         printf("0. Exit\n");
         printf("Enter your choice : ");
         scanf("%d",&choice);
@@ -37,6 +38,11 @@ int main(){
                 break;
             case 5:
                 printf("Height of the tree : %d\n",FindHeight(rootptr));
+                break;
+            case 6:
+                printf("Enter the data of the node you want to delete : ");
+                scanf("%d",&elem);
+                rootptr = DeleteNode(rootptr,elem);
                 break;
             default: printf("Enter a valid choice!!\n");
         }
