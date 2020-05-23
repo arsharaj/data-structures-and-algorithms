@@ -26,5 +26,6 @@ using namespace std;
 #include"inorder.hpp"
 #include"postorder.hpp"
 #include"is_binary_search_tree.hpp"
+#include"inorder_successor.hpp"
 
 #endif
