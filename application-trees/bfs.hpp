@@ -1,24 +1,12 @@
+// Include all the required files
+#include"tree_traversal.hpp"
+
 /*
 Implementation of Breadth-First-Search. 
 Also known as level-order traversal.
 Here all the data is processed level by level.
 Time Complexity of the bfs algo is constant but the space complexity is varying in nature.
 */
-
-#ifndef _BFS_H
-#define _BFS_H
-
-// Built-in libraries
-#include<iostream>
-#include<queue>
-
-// Custom C libraries
-#include"../trees/binary_search_trees.h"
-
-// Defining the namespace
-using namespace std;
-
-// BFS functionality
 void BFS(struct BstNode* root){
     cout << "BFS Traversal : ";
     // Corner case
@@ -43,5 +31,3 @@ void BFS(struct BstNode* root){
     }
     cout << endl;
 }
-
-#endif
