@@ -1,5 +1,5 @@
 // Include all the required files
-#include"tree_traversal.hpp"
+#include"application_trees.hpp"
 
 /*
 Postorder traversal is one of the tree traversal algorithm based upon depth-first algorithm.

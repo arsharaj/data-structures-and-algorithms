@@ -1,5 +1,5 @@
 // Include all the required files
-#include"tree_traversal.hpp"
+#include"application_trees.hpp"
 
 /*
     Preorder traversal of tree is one of the three methods of depth-first-search algorithms.

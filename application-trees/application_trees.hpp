@@ -6,12 +6,13 @@ Implementation of different tree-traversal algorithms.
 4. Postorder traversal (DFS algorithm)
 */
 
-#ifndef _TREE_TRAVERSAL_H
-#define _TREE_TRAVERSAL_H
+#ifndef _APPLICATION_TREES_H
+#define _APPLICATION_TREES_H
 
 // Built-in libraries
 #include<iostream>
 #include<queue>
+#include<limits.h>
 
 // Custom C libraries
 #include"../trees/binary_search_trees.h"
@@ -24,5 +25,6 @@ using namespace std;
 #include"preorder.hpp"
 #include"inorder.hpp"
 #include"postorder.hpp"
+#include"is_binary_search_tree.hpp"
 
 #endif

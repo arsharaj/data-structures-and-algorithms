@@ -1,5 +1,5 @@
 // Include all the required files
-#include"tree_traversal.hpp"
+#include"application_trees.hpp"
 
 // Main function - Main driver program of all the algorithms
 int main(){
@@ -12,6 +12,7 @@ int main(){
         cout << "3. Preorder traversal of the tree\n";
         cout << "4. Inorder traversal of the tree\n";
         cout << "5. Postorder traversal of the tree\n";
+        cout << "6. Check that the given tree is binary search tree or not\n";
         cout << "0. Exit\n";
         cout << "Enter your choice : ";
         cin >> choice;
@@ -39,6 +40,13 @@ int main(){
                 cout << "Postorder traversal : ";
                 Postorder(rootptr);
                 cout << endl;
+                break;
+            case 6:
+                if(IsBinarySearchTree(rootptr)){
+                    cout << "Yes, tree is a binary search tree\n";
+                }else{
+                    cout << "No, tree is not a binary search tree\n";
+                }
                 break;
             default: cout << "Enter a valid choice!!\n";
         }
