@@ -12,6 +12,7 @@ Implementation of different tree-traversal algorithms.
 // Built-in libraries
 #include<iostream>
 #include<queue>
+#include<stack>
 #include<limits.h>
 
 // Custom C libraries
@@ -27,5 +28,6 @@ using namespace std;
 #include"postorder.hpp"
 #include"is_binary_search_tree.hpp"
 #include"inorder_successor.hpp"
+#include"inorder_predecessor.hpp"
 
 #endif
