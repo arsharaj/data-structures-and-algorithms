@@ -2,7 +2,6 @@
   
 ![](https://img.shields.io/github/forks/arsharaj/https://github.com/arsharaj/data-structures-and-algorithms.git?style=social)
 ![](https://img.shields.io/github/watchers/arsharaj/data-structures-and-algorithms?style=social)
-![](https://img.shields.io/bitbucket/issues-raw/arsharaj/data-structure-and-algorithms)
 ![](https://img.shields.io/github/followers/arsharaj?style=social)
 
 </center>
