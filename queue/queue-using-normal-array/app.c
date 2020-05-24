@@ -1,8 +1,8 @@
 // Include all the required files
 #include"queue.h"
 
-// Main function - Starting point of our program.
-void main(){
+// Main function - Starting point of our queue using normal array program.
+int main(){
   int choice,elem;
 
   printf("\tQueue\n\n");
@@ -48,4 +48,5 @@ void main(){
       default: printf("\nInvalid choice! Try Again ??\n");
     }
   }while(choice!=0);
+  return 0;
 } // End of function

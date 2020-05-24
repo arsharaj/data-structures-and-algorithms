@@ -1,8 +1,8 @@
 // Include all teh required files
 #include"queue.h"
 
-// Main function
-void main(){
+// Main function - Queue using linked list
+int main(){
     int choice,elem;
 
     printf("\tQueue using linked list\n\n");
@@ -41,4 +41,5 @@ void main(){
             default: printf("\nInvalid choice!! Try Again.. \n\n");
         }
     }while(choice!=0);
+    return 0;
 }

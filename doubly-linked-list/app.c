@@ -1,8 +1,8 @@
 // Including all the required header files.
 #include"linked_list.h"
 
-// Main function - Starting point of the program
-void main(){
+// Main function - Starting point of the doubly linked list program
+int main(){
   int choice,elem;
 
   printf("\tDoubly Linked List\n\n");
@@ -51,5 +51,6 @@ void main(){
         printf("\nInvalid choice!\nTry Again?\n");
     }
   }while(choice!=0);
+  return 0;
 }
 

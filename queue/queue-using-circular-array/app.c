@@ -2,7 +2,7 @@
 #include"queue.h"
 
 // Main-function starting point of the program.
-void main(){
+int main(){
   int choice,elem;
 
   printf("\nQueue using Circular Array\n\n");

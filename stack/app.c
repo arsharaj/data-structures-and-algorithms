@@ -1,8 +1,8 @@
 // Including all the required header files.
 #include"stack.h"
 
-// Main Function - Starting point of the program.
-void main(){
+// Main Function - Starting point of the stack program.
+int main(){
   int choice;
 
   printf("\tStack\n\n");
@@ -26,4 +26,5 @@ void main(){
       default: printf("\nInvalid choice!\nEnter a valid choice?\n\n");
     }
   }while(choice!=0);
+  return 0;
 }

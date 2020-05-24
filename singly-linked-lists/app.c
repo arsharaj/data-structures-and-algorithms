@@ -1,8 +1,8 @@
 // Including all the required header files.
 #include "linked_list.h"
 
-// Main Function - Entry point for the program
-void main()
+// Main Function - Entry point for the Linked List program.
+int main()
 {
 	int choice, elem, pos;
 	printf("\tLinked Lists\n\n");
@@ -70,4 +70,5 @@ void main()
 			printf("Invalid choice!\nTry Again\n");
 		}
 	} while (choice != 0);
+	return 0;
 }
