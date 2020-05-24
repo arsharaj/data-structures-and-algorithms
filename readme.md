@@ -17,7 +17,6 @@ Science so in order to strengthen my learning and make it much more interesting 
 this project open source so that I could get valuable suggestion from developers who are
 more experienced than me and help out those who are just getting started.
 
----
 
 ## Prerequisites
 
@@ -26,7 +25,6 @@ more experienced than me and help out those who are just getting started.
 
 These two things should be setup onto your system.
 
----
 
 ## Installation
 
@@ -39,7 +37,6 @@ git clone https://github.com/arsharaj/data-structures-and-algorithms.git
 ```
 A folder will be created in your present work directory. Rename this folder whatever you want. 😀
 
----
 
 ## Usage
 
@@ -64,12 +61,10 @@ Run this file using this command.
 ./a.out
 ``` 
 
----
 ## Authors
 
 - Arsharaj Chauhan - [Github](https://github.com/arsharaj)
 
----
 
 ## Contributing
 
@@ -87,6 +82,5 @@ relevant things here.
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
----
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
