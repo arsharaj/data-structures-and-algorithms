@@ -33,6 +33,7 @@ int main()
 		printf("8. Reverse the whole list in recursive manner\n");
 		printf("9. Delete the element using the data or key\n");
 		printf("10. Length of the list or Number of nodes in linked list (iterative way)\n");
+		printf("11. Length of the list or Number of nodes in linked list (recursive way)\n");
 		printf("0. Exit \n\n");
 		printf("Enter your choice : ");
 		scanf("%d", &choice);
@@ -91,6 +92,9 @@ int main()
 			break;
 		case 10:
 			printf("Length of the current linked list is : %d\n\n", LengthIterative(head));
+			break;
+		case 11:
+			printf("Length of the current linked list is : %d\n\n", LengthRecursive(head));
 			break;
 		default:
 			printf("Invalid choice!\nTry Again\n");
