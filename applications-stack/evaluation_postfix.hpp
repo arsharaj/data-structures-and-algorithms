@@ -1,9 +1,5 @@
 // Include all the required files
-#include<iostream>
-#include<stack>
-
-// Define the namespace for standard library
-using namespace std;
+#include"application_stack.hpp"
 
 // Evaluates the result in the postfix expression.
 int EvaluateResult(int operand1, int operand2, char symbol){

@@ -1,21 +1,18 @@
 // Including all the required files
-#include<iostream>
-#include<stack>
-#include<string.h>
+#include"application_stack.hpp"
 
 // Reverse the argument string in place.
 // Changes reflect back to the original char array.
 void ReverseString(){ 
-  char mystring[50];
+  string mystring;
   int i;
   std::stack <char> mystack;
   
-  printf("Enter the string : ");
-  scanf("%[^\n]s",mystring);  
+  cout << "Enter the string : ";
+  cin >>  mystring;
   
   // Pushing all the characters into the stack.
-  for(i=0;i<strlen(mystring);i++)
-  {
+  for(i=0;i<mystring.length();i++){
     mystack.push(mystring[i]);
   }
 
@@ -28,5 +25,5 @@ void ReverseString(){
     i++;
   }
 
-  printf("Reversed String : %s\n",mystring);
+  cout << "Reversed String : " << mystring << endl;
 }

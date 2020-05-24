@@ -1,7 +1,7 @@
 // Including all the required files
 #include"linked_list.h"
 
-// Reveres the whole list in place.
+// Reverse the whole list in place.
 // Changes reflect back to the original list.
 void ReverseList(){
   struct Node *current,*prev,*next;

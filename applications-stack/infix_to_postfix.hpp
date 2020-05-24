@@ -1,10 +1,5 @@
 // Include all the required files
-#include<iostream>
-#include<stack>
-#include<string>
-
-// Define the namespace for standard library
-using namespace std;
+#include"application_stack.hpp"
 
 // Check weather the given character is an opening bracket or not
 // Return true if it is an opening bracket else return false.

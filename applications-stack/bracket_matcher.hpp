@@ -1,9 +1,5 @@
-// Including all the required files.
-#include<iostream>
-#include<stack>
-
-// Defining the namespace for the standard library.
-using namespace std;
+// Include all the required files
+#include"application_stack.hpp" 
 
 // Bracket matcher checks for the opening and closing brackets in the 
 // expression for the correct evaluation of the expression.

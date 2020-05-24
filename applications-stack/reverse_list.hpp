@@ -1,6 +1,5 @@
 // Including all the required files
-#include<iostream>
-#include<stack>
+#include"application_stack.hpp"
 #include"../singly-linked-lists/linked_list.h"
 
 // Reverse the list with the help of stack
