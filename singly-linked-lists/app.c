@@ -31,6 +31,7 @@ int main()
 		printf("6. Print all the elements in a list in recursive way\n");
 		printf("7. Print reverse list in a recursive way\n");
 		printf("8. Reverse the whole list in recursive manner\n");
+		printf("9. Delete the element using the data or key\n");
 		printf("0. Exit \n\n");
 		printf("Enter your choice : ");
 		scanf("%d", &choice);
@@ -79,6 +80,12 @@ int main()
 			break;
 		case 8:
 			ReverseRecursive(head);
+			PrintList();
+			break;
+		case 9:
+			printf("Enter the data or key you want to delete : ");
+			scanf("%d",&elem);
+			DeleteKey(elem);
 			PrintList();
 			break;
 		default:
