@@ -50,6 +50,16 @@ int OneHalfPeakFinder(int array[], int size){
     return max;
 }
 
+// It is much clever idea to find for the first fall while moving through the array
+// The element from where the fall starts is the first peak that we found.
+int RisingFallingPeakFinder(int array[],int size){
+    int i=1;
+    while(i<size && array[i]>array[i-1]){
+        i++;
+    }
+    return array[i-1];
+}
+
 // Main function - starting point of the program
 int main(){
     int size,i;
@@ -67,5 +77,6 @@ int main(){
     // Answer of all the algorithms need not be same
     printf("The peak of the array (Brute force) : %d \n", BruteForcePeakFinder(array,size));
     printf("The peak of the array (One-Half) : %d\n", OneHalfPeakFinder(array,size));
+    printf("The peak of the array (Rising Falling methodology) : %d\n", RisingFallingPeakFinder(array,size));
     return 0;
 }
