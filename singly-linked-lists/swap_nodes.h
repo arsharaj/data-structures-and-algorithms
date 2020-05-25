@@ -40,6 +40,11 @@ void SwapNodes(struct Node* temp, int first_key, int second_key){
 		return;
 	}
 
+	// If first key and second key are same
+	if(first_key==second_key){
+		return;
+	}
+
 	// Tracking all the required local pointers from the linked list
 	while(temp!=NULL){
 		if(temp->next!=NULL && temp->next->data==first_key){
@@ -72,14 +77,35 @@ void SwapNodes(struct Node* temp, int first_key, int second_key){
 	}
 
 	// Handling the corner case where the key is in the head node itself.
-	// This condition will only encounter when there are only two nodes in the list
-	// and we want to swap them.
-    // Both of these conditions will only be encountered in only these two special cases.
-	if(node1_prev==NULL || node2_prev==NULL){
-        printf("I am working on this part of algorithm!!");
-        ReverseList();
+	// These conditions will be encountered when we want to deal with the head node.
+	
+	// Adjacent nodes
+	if(node2_prev==node1){
+		head=node1->next;
+		node1->next=node2->next;
+		node2->next=node1;
+		return;
 	}
 
+	if(node1_prev==node2){
+		head=node2->next;
+		node2->next=node1->next;
+		node1->next=node2;
+		return;
+	}
+
+	if(node1_prev==NULL){
+		head=node2;
+		SwapPointers(&node2,&node1);
+		node2_prev->next=node1;
+		return;
+	}
+	if(node2_prev==NULL){
+		head=node1;
+		SwapPointers(&node1,&node2);
+		node1_prev->next=node2;
+		return;
+	}
 	// Values are swapped!! Enjoy...
 	// Now use this algorithm to implement different sorting techniques in linked list.
 	// Beware that time complexity of the overall sorting algorithm will be affected by this algorithm.
