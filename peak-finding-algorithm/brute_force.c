@@ -39,6 +39,17 @@ int BruteForcePeakFinder(int array[],int size){
     }
 }
 
+// The peak of the array would be the maximum element in the array
+int OneHalfPeakFinder(int array[], int size){
+    int max=0,i;
+    for(i=0;i<size;i++){
+        if(array[i]>max){
+            max=array[i];
+        }
+    }
+    return max;
+}
+
 // Main function - starting point of the program
 int main(){
     int size,i;
@@ -53,6 +64,8 @@ int main(){
         scanf("%d",&array[i]);
     }
 
-    printf("The peak of the array : %d \n", BruteForcePeakFinder(array,size));
+    // Answer of all the algorithms need not be same
+    printf("The peak of the array (Brute force) : %d \n", BruteForcePeakFinder(array,size));
+    printf("The peak of the array (One-Half) : %d\n", OneHalfPeakFinder(array,size));
     return 0;
 }
