@@ -20,6 +20,10 @@ furnished to do so, subject to the following conditions:
 int main()
 {
 	int choice, elem, pos;
+
+	// For swappiness algorithm
+	int first_key, second_key;
+
 	printf("\tLinked Lists\n\n");
 	do
 	{
@@ -34,6 +38,7 @@ int main()
 		printf("9. Delete the element using the data or key\n");
 		printf("10. Length of the list or Number of nodes in linked list (iterative way)\n");
 		printf("11. Length of the list or Number of nodes in linked list (recursive way)\n");
+		printf("12. Swap two nodes in the linked list with keys\n");
 		printf("0. Exit \n\n");
 		printf("Enter your choice : ");
 		scanf("%d", &choice);
@@ -95,6 +100,14 @@ int main()
 			break;
 		case 11:
 			printf("Length of the current linked list is : %d\n\n", LengthRecursive(head));
+			break;
+		case 12:
+			printf("Enter the first key : ");
+			scanf("%d",&first_key);
+			printf("Enter the second key : ");
+			scanf("%d",&second_key);
+			SwapNodes(head,first_key,second_key);	// Swap the nodes in place.
+			PrintList();
 			break;
 		default:
 			printf("Invalid choice!\nTry Again\n");
