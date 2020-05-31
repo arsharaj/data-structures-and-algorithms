@@ -31,6 +31,7 @@ struct Node {
 // Custom Libraries
 #include"insert-end.hpp"
 #include"print-list.hpp"
-#include"sorted_merge.hpp"
+#include"sorted-merge.hpp"
+#include"merge-sort.hpp"
 
 #endif
