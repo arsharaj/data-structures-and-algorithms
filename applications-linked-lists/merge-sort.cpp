@@ -3,16 +3,41 @@
 
 // Function Definitons
 
+void SplitFrontBack(Node* head, Node** a, Node** b){
+    Node* slow=head;
+    Node* fast=head->next;
+
+    while(fast!=NULL){
+        fast=fast->next;
+        if(fast!=NULL){
+            slow=slow->next;
+            fast=fast->next;
+        }
+    }
+
+    *a = head;
+    *b = slow->next;
+    slow->next=NULL;
+}
+
 // Merge Sort is the best way and standard approach on linked list for sorting elements.
 // Quick sort is slow on linked list and heap sort is almost impossible. 
 // Merge Sort is based upon Divide and Conquer Methodology.
-Node* MergeSort(Node** head){
-    // Corner Case 1 - If the list is empty.
-    if(*head==NULL){
-        return NULL;
-    }else{
-        // TODO - Main Algorithm for merge sort in case of linked list.
+void MergeSort(Node** headref){
+    Node* head = *headref;
+    Node* a;
+    Node* b;
+
+    // Base case - List is sorted
+    if(head==NULL || head->next==NULL){
+        return;
     }
+
+    SplitFrontBack(head,&a,&b);
+    MergeSort(&a);
+    MergeSort(&b);
+
+    *headref = SortedListMerge(a, b);
 }
 
 // Main function - starting point of the program
@@ -35,7 +60,7 @@ int main(){
     cout << "---- Unsorted List ----" << endl;
     PrintList(list);
 
-    list=MergeSort(&list);
+    MergeSort(&list);
 
     cout << "---- Sorted List ----" << endl;
     PrintList(list);
