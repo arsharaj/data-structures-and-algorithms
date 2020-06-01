@@ -1,8 +1,6 @@
 // Include all the required files
 #include"applications-linked-list.hpp"
 
-// Function Definitons
-
 // For splitting the list I am using a technique for running one pointer
 // two times the other so that we can find the middle of the list.
 void SplitList(Node* head, Node** left, Node** right){
@@ -20,6 +18,31 @@ void SplitList(Node* head, Node** left, Node** right){
     *left = head;
     *right = slowPtr->next;
     slowPtr->next = NULL;   // For splitting the lists.
+}
+
+// Sorted Merge -  Merges the two list in place
+Node* SortedMerge(Node* list1, Node* list2){
+    Node* result;
+
+    // Base conditions
+    if(list1==NULL){
+        return list2;
+    }
+    if(list2==NULL)
+    {
+        return list1;
+    }
+
+// Function Definitons
+    if(list1->data < list2->data){
+        result = list1;
+        result->next = SortedMerge(list1->next,list2);
+    }else{
+        result = list2;
+        result->next = SortedMerge(list1,list2->next);
+    }
+
+    return result;
 }
 
 // Merge Sort is the best way and standard approach on linked list for sorting elements.
@@ -44,5 +67,5 @@ void MergeSort(Node** head){
     MergeSort(&righthalf);
 
     // Merge the two halfs in a sorted way
-    *head = SortedListMerge(leftHalf,righthalf);
+    *head = SortedMerge(leftHalf,righthalf);
 }
