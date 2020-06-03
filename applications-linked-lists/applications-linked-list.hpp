@@ -33,5 +33,6 @@ struct Node {
 #include"print-list.hpp"
 #include"sorted-merge.hpp"
 #include"merge-sort.hpp"
+#include"block_reverse.hpp"
 
 #endif

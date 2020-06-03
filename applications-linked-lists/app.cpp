@@ -19,7 +19,7 @@ furnished to do so, subject to the following conditions:
 // Main function - Main driver program of all the algorithms
 int main(){
     // Variable declarations
-    int size1, size2, elem, i, choice, size;
+    int size1, size2, elem, i, choice, size, blockSize;
     Node *list1 = NULL;
     Node *list2 = NULL;
     Node *mergedList = NULL;
@@ -29,6 +29,7 @@ int main(){
     do{
         cout << "1. Merge sorted arrays into one\n";
         cout << "2. Perform merge sort on linked lists \n";
+        cout << "3. Reverse the linked list according to some particular size \n";
         cout << "0. Exit\n";
         cout << "Enter your choice : ";
         cin >> choice;
@@ -36,6 +37,7 @@ int main(){
         case 0:
             break;
         case 1:
+            // ------------- Merges two sorted lists -----------------
             cout << "\t Merge two sorted lists \n\n";
             cout << "Size of List 1 : ";
             cin >> size1;
@@ -59,6 +61,7 @@ int main(){
             cout << endl;
             break;
         case 2:
+            // --------------------Merge Sort ------------------------
             cout << "\tMerge Sort\n\n";
             cout << "Size of the list : ";
             cin >> size;
@@ -73,6 +76,24 @@ int main(){
             cout << "---- Sorted List ----" << endl;
             PrintList(list);
             cout << endl;
+            break;
+        case 3:
+            // --------------------Block Reverse-----------------
+            cout << "\tBlock Reverse\n\n";
+            cout << "Size of the list : ";
+            cin >> size;
+            cout << "Enter the elements in the list : ";
+            for(int i = 0; i < size; i++){
+                cin >> elem;
+                list = InsertEnd(list, elem);
+            }
+            cout << "----- Before the block reverse ------" << endl;
+            PrintList(list);
+            cout << "Enter the block size : ";
+            cin >> blockSize;
+            cout << "----- After the block reverse -------" <<  endl;
+            list = BlockReverse(list, blockSize);
+            PrintList(list);
             break;
         default:
             cout << "Enter a valid choice!!\n";
