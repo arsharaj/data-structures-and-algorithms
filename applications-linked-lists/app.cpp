@@ -30,6 +30,7 @@ int main(){
         cout << "1. Merge sorted arrays into one\n";
         cout << "2. Perform merge sort on linked lists \n";
         cout << "3. Reverse the linked list according to some particular size \n";
+        cout << "4. Detect and remove the loop from the linked list\n";
         cout << "0. Exit\n";
         cout << "Enter your choice : ";
         cin >> choice;
@@ -94,6 +95,15 @@ int main(){
             cout << "----- After the block reverse -------" <<  endl;
             list = BlockReverse(list, blockSize);
             PrintList(list);
+            break;
+        case 4:
+            // --------------- Detect and remove the loop -----------
+            if(DetectAndRemoveLoop(list)){
+                cout << "Loop is Detected in the global list!\n";
+                cout << "Loop Removed !!\n";
+            }else{
+                cout << "Loop is not Detected in the global list!\n";
+            }
             break;
         default:
             cout << "Enter a valid choice!!\n";

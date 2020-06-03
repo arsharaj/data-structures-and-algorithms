@@ -34,5 +34,6 @@ struct Node {
 #include"sorted-merge.hpp"
 #include"merge-sort.hpp"
 #include"block_reverse.hpp"
+#include"detect-and-remove-loop.hpp"
 
 #endif
