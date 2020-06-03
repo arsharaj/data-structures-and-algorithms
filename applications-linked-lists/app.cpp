@@ -31,6 +31,7 @@ int main(){
         cout << "2. Perform merge sort on linked lists \n";
         cout << "3. Reverse the linked list according to some particular size \n";
         cout << "4. Detect and remove the loop from the linked list\n";
+        cout << "5. Floyd Cycle Detection Algorithm\n";
         cout << "0. Exit\n";
         cout << "Enter your choice : ";
         cin >> choice;
@@ -104,6 +105,12 @@ int main(){
             }else{
                 cout << "Loop is not Detected in the global list!\n";
             }
+            break;
+        case 5: 
+            // ---------------- Floyd Cycle Detection Algorithm -----------
+            cout << "Floys Cycle Detection Algo on global list (0-false and 1-true) : ";
+            cout << FloydCycleDetection(list) << endl;
+            cout << "Cycle means that if one of the next pointer in the linked list point to the previous node in the linked list.\n\n";
             break;
         default:
             cout << "Enter a valid choice!!\n";

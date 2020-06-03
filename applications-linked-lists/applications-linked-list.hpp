@@ -35,5 +35,6 @@ struct Node {
 #include"merge-sort.hpp"
 #include"block_reverse.hpp"
 #include"detect-and-remove-loop.hpp"
+#include"floyd-cycle-detection-algorithm.hpp"
 
 #endif
