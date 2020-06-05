@@ -25,6 +25,10 @@ int main(){
     Node *mergedList = NULL;
     Node *list = NULL;
 
+    Node* num1 = NULL;
+    Node* num2 = NULL;
+    Node* sum = NULL;
+
     cout << "\tLinked List Applications\n\n";
     do{
         cout << "1. Merge sorted arrays into one\n";
@@ -32,6 +36,7 @@ int main(){
         cout << "3. Reverse the linked list according to some particular size \n";
         cout << "4. Detect and remove the loop from the linked list\n";
         cout << "5. Floyd Cycle Detection Algorithm\n";
+        cout << "6. Add two lists as numbers\n";
         cout << "0. Exit\n";
         cout << "Enter your choice : ";
         cin >> choice;
@@ -111,6 +116,27 @@ int main(){
             cout << "Floys Cycle Detection Algo on global list (0-false and 1-true) : ";
             cout << FloydCycleDetection(list) << endl;
             cout << "Cycle means that if one of the next pointer in the linked list point to the previous node in the linked list.\n\n";
+            break;
+        case 6:
+            // --------------- Lists Addition as Numbers------------------
+            cout << "Length of the num1 : ";
+            cin >> size1;
+            cout << "Enter the num1 digits backward : ";
+            for(int i = 0; i < size1; i++){
+                cin >> elem;
+                num1 = InsertEnd(num1, elem);
+            }
+            cout << "Length of the num2 : ";
+            cin >> size2;
+            cout << "Enter the num2 digits backward : ";
+            for(int i = 0; i < size2; i++){
+                cin >> elem;
+                num2 = InsertEnd(num2, elem);
+            }
+            sum = AddListsAsNumbers(num1, num2);
+            cout << "-------- Sum(Read Backwards) ----------" << endl;
+            PrintList(sum);
+            cout << endl;
             break;
         default:
             cout << "Enter a valid choice!!\n";

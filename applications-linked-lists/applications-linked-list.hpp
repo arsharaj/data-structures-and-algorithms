@@ -36,5 +36,6 @@ struct Node {
 #include"block_reverse.hpp"
 #include"detect-and-remove-loop.hpp"
 #include"floyd-cycle-detection-algorithm.hpp"
+#include"lists_addition_as_numbers.hpp"
 
 #endif
