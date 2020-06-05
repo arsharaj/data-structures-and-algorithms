@@ -85,6 +85,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Resources
 
 - [My Code School Data Structure Playlist](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+- [Geeks for Geeks Full Data Structure Course](https://www.geeksforgeeks.org/data-structures/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
