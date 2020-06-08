@@ -12,7 +12,7 @@ int main(){
         head = Push(head, &arr[i], intsize);
     }
     printf("The integer linked list is : ");
-    PrintInt(head, intsize);
+    PrintList(head, PrintInt);      // PrintInt is a function pointer
 
     // Float Array
     head = NULL;
@@ -22,7 +22,7 @@ int main(){
         head = Push(head, &floatarr[i], floatsize);
     }
     printf("The float linked list is : ");
-    PrintFloat(head, floatsize);
+    PrintList(head, PrintFloat);    // PrintFloat is a function pointer
     
     // Character Array
     head = NULL;
@@ -35,7 +35,7 @@ int main(){
         i++;
     }
     printf("The char linked list is : ");
-    PrintChar(head, charsize);
+    PrintList(head, PrintChar);     // PrintChar is a function pointer
 
     return 0;
 }
