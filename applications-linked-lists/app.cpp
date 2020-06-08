@@ -19,11 +19,12 @@ furnished to do so, subject to the following conditions:
 // Main function - Main driver program of all the algorithms
 int main(){
     // Variable declarations
-    int size1, size2, elem, i, choice, size, blockSize;
+    int size1, size2, elem, i, choice, size, blockSize, k;
     Node *list1 = NULL;
     Node *list2 = NULL;
     Node *mergedList = NULL;
     Node *list = NULL;
+    Node* head = NULL;
 
     Node* num1 = NULL;
     Node* num2 = NULL;
@@ -37,6 +38,8 @@ int main(){
         cout << "4. Detect and remove the loop from the linked list\n";
         cout << "5. Floyd Cycle Detection Algorithm\n";
         cout << "6. Add two lists as numbers\n";
+        cout << "7. Insert at the beginning of the linked list\n";
+        cout << "8. Rotate the linked list by k nodes\n";
         cout << "0. Exit\n";
         cout << "Enter your choice : ";
         cin >> choice;
@@ -137,6 +140,20 @@ int main(){
             cout << "-------- Sum(Read Backwards) ----------" << endl;
             PrintList(sum);
             cout << endl;
+            break;
+        case 7:
+            // ---------------------Insert at the beginning -----------------
+            cout << "Element : ";
+            cin >> elem;
+            head = InsertBegin(head,elem);
+            PrintList(head);
+            break;
+        case 8:
+            // ----------------- Rotate the linked list by k nodes ------------
+            cout << "Enter the k : ";
+            cin >> k;
+            head =  RotateList(head, k);
+            PrintList(head);
             break;
         default:
             cout << "Enter a valid choice!!\n";

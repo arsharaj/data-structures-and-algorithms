@@ -33,9 +33,11 @@ struct Node {
 #include"print-list.hpp"
 #include"sorted-merge.hpp"
 #include"merge-sort.hpp"
-#include"block_reverse.hpp"
+#include"block-reverse.hpp"
 #include"detect-and-remove-loop.hpp"
 #include"floyd-cycle-detection-algorithm.hpp"
-#include"lists_addition_as_numbers.hpp"
+#include"lists-addition-as-numbers.hpp"
+#include"insert-begin.hpp"
+#include"rotate-list.hpp"
 
 #endif
