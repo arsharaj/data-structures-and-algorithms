@@ -13,6 +13,7 @@ int main(){
         printf("1. Insert the element in the beginning of the linked list\n");
         printf("2. Insert element at the end of the linked list\n");
         printf("3. Split the circular linked list in two halves\n");
+        printf("4. Insert element in the list in a sorted way (sorted insert)\n");
         printf("0. Exit\n\n");
         printf("Enter your choice : ");
         scanf(" %d",&choice);
@@ -38,6 +39,12 @@ int main(){
                 PrintList(lefthalf);
                 printf("-------List 2-------------\n");
                 PrintList(righthalf);
+                break;
+            case 4:
+                printf("Element : ");
+                scanf(" %d",&elem);
+                head =  InsertSorted(head, elem);
+                PrintList(head);
                 break;
             default: printf("Enter a valid choice \n");
         }

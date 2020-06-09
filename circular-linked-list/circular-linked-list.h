@@ -49,5 +49,6 @@ struct Node{
 #include"print-list.h"
 #include"insert-end.h"
 #include"split-list-into-two-halves.h"
+#include"insert-sorted.h"
 
 #endif
