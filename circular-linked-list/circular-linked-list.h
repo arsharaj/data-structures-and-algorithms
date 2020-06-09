@@ -1,4 +1,19 @@
 /*
+
+MIT License
+
+Copyright (c) 2020 Arsharaj Chauhan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+*/
+
+/*
 Circular linked list are somewhat similiar to normal singly linked list
 but there is a slight difference that the end of the circular linked list
 contains the address of the head.
@@ -32,5 +47,6 @@ struct Node{
 // Custom functions
 #include"insert-begin.h"
 #include"print-list.h"
+#include"insert-end.h"
 
 #endif
