@@ -18,6 +18,7 @@ furnished to do so, subject to the following conditions:
 
 // Split the list into two halves.
 // Changes reflect back to the original list.
+// Implemented using Tortoise and Hare Algorithm.
 void SplitList(struct Node* head, struct Node** lefthalf, struct Node** rightHalf){
     // Corner Case - If the original list is empty
     if(head == NULL){
