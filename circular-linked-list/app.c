@@ -9,6 +9,7 @@ int main(){
     printf("\tCircular Linked List\n\n");
     do{
         printf("1. Insert the element in the beginning of the linked list\n");
+        printf("2. Insert element at the end of the linked list\n");
         printf("0. Exit\n\n");
         printf("Enter your choice : ");
         scanf(" %d",&choice);
@@ -18,6 +19,12 @@ int main(){
                 printf("Element : ");
                 scanf(" %d",&elem);
                 head = InsertBegin(head, elem);
+                PrintList(head);
+                break;
+            case 2:
+                printf("Element : ");
+                scanf(" %d",&elem);
+                head = InsertEnd(head, elem);
                 PrintList(head);
                 break;
             default: printf("Enter a valid choice \n");
